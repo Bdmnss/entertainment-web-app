@@ -7,6 +7,11 @@ import data from "../data.json";
 
 export default function HomeSearch() {
   const [searchInput, setSearchInput] = useState("");
+
+  const hasSearchedItems = data.some((item) =>
+    item.title.toLowerCase().includes(searchInput.toLowerCase())
+  );
+
   return (
     <div className="flex items-center gap-4 bg-[#10141e] py-[1rem] responsive">
       <label htmlFor="search">
@@ -20,7 +25,7 @@ export default function HomeSearch() {
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
       />
-      {searchInput && (
+      {searchInput && hasSearchedItems ? (
         <div
           className="absolute bg-[#10141e] w-[90%] h-[30%] rounded-lg shadow-lg z-10 top-[11%] overflow-hidden
       overflow-y-scroll border border-[#3d3d3d] scroll-smooth"
@@ -44,7 +49,16 @@ export default function HomeSearch() {
               </div>
             ))}
         </div>
-      )}
+      ) : searchInput ? (
+        <div
+          className="absolute bg-[#10141e] w-[90%] h-[30%] rounded-lg shadow-lg z-10 top-[11%] 
+        overflow-hidden border border-[#3d3d3d] flex items-center justify-center"
+        >
+          <p className="text-white text-[1.6rem] font-light">
+            No results found
+          </p>
+        </div>
+      ) : null}
     </div>
   );
 }

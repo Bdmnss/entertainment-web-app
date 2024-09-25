@@ -15,9 +15,6 @@ export default function Page() {
 
   return (
     <div className="bg-[#10141e] min-h-screen min-w-screen px-[1.3rem] pt-7 pb-10">
-      <h2 className="text-white text-[2rem] font-light mb-[2.4rem]">
-        Bookmarked
-      </h2>
       <div className=" flex flex-wrap gap-[1.3rem] ">
         {hasBookmarkedItems ? (
           bookmarkStore.data.map((item) =>
