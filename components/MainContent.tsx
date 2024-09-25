@@ -17,7 +17,7 @@ export default function MainContent() {
       <h2 className="text-white text-[2rem] font-light mb-[2.4rem]">
         Recommended for you
       </h2>
-      <div className="flex flex-wrap gap-[1.3rem]">
+      <div className="flex flex-wrap gap-[1.3rem] justify-center">
         {data.map((item) =>
           (pageStore.currentPage === "home" && !item.isTrending) ||
           (pageStore.currentPage === "movies" && item.category === "Movie") ||

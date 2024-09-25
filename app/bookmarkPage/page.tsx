@@ -15,7 +15,7 @@ export default function Page() {
 
   return (
     <div className="bg-[#10141e] min-h-screen min-w-screen px-[1.3rem] pt-7 pb-10">
-      <div className=" flex flex-wrap gap-[1.3rem] ">
+      <div className=" flex flex-wrap gap-[1.3rem] justify-center">
         {hasBookmarkedItems ? (
           bookmarkStore.data.map((item) =>
             item.isBookmarked ? (
