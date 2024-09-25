@@ -16,7 +16,26 @@
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": true
+    "isTrending": true,
+    "description": "Shot over eight years and with unprecedented access, Beyond Earth: The Beginning of NewSpace, is a journey into space exploration with the world's leading astropreneurs including Elon Musk, Richard Branson, Eric Anderson, Robert Bigelow and Chris Hadfield to shows us what is in store for humankind, and why we are at the next great turning point in human history.",
+    "genre": "Documentary",
+    "cast": [
+      {
+        "name": "Elon Musk"
+      },
+      {
+        "name": "Richard Branson"
+      },
+      {
+        "name": "Eric Anderson"
+      },
+      {
+        "name": "Robert Bigelow"
+      },
+      {
+        "name": "Chris Hadfield"
+      }
+    ]
   },
   {
     "title": "Bottom Gear",
@@ -35,7 +54,23 @@
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": true
+    "isTrending": true,
+    "description": "Bottom Gear is a movie about a group of friends who embark on a road trip across the country in a car that is on its last legs. The journey is filled with unexpected twists and turns, and the friends must rely on each other to make it to their destination in one piece.",
+    "genre": "Comedy",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Undiscovered Cities",
@@ -54,7 +89,23 @@
     "category": "TV Series",
     "rating": "E",
     "isBookmarked": false,
-    "isTrending": true
+    "isTrending": true,
+    "description": "Undiscovered Cities is a TV series that takes viewers on a journey to some of the most fascinating and unexplored cities in the world. From the bustling streets of Tokyo to the ancient ruins of Machu Picchu, each episode explores a different city and its unique culture, history, and people.",
+    "genre": "Travel",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "1998",
@@ -73,7 +124,23 @@
     "category": "Movie",
     "rating": "18+",
     "isBookmarked": false,
-    "isTrending": true
+    "isTrending": true,
+    "description": "1998 is a movie about a group of friends who are transported back in time to the year 1998. As they navigate the challenges of the past, they must confront their own personal demons and come to terms with the choices they have made in their lives.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Dark Side of the Moon",
@@ -92,7 +159,23 @@
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": true
+    "isTrending": true,
+    "description": "Dark Side of the Moon is a TV series that explores the mysteries of the universe and the secrets of the cosmos. From the origins of the universe to the nature of black holes, each episode delves into a different aspect of space and time, and the forces that shape our world.",
+    "genre": "Documentary",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "The Great Lands",
@@ -122,7 +205,23 @@
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "The Diary is a TV series that follows the lives of a group of friends as they navigate the challenges of adulthood. From love and loss to friendship and betrayal, each episode explores a different aspect of their lives and the choices they make along the way.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Earth’s Untouched",
@@ -137,7 +236,23 @@
     "category": "Movie",
     "rating": "18+",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Earth’s Untouched is a movie that takes viewers on a journey to some of the most remote and unexplored places on Earth. From the frozen tundra of Antarctica to the lush rainforests of the Amazon, each scene captures the beauty and wonder of our planet in all its glory.",
+    "genre": "Documentary",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "No Land Beyond",
@@ -152,7 +267,23 @@
     "category": "Movie",
     "rating": "E",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "No Land Beyond is a movie that follows the journey of a group of explorers as they venture into the unknown in search of a lost city. Along the way, they must overcome treacherous terrain, hostile wildlife, and rival factions to uncover the secrets of the past and the promise of the future.",
+    "genre": "Adventure",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "During the Hunt",
@@ -167,7 +298,23 @@
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "During the Hunt is a TV series that follows a group of hunters as they track down elusive prey in some of the most remote and dangerous locations on Earth. From the frozen tundra of the Arctic to the dense jungles of the Amazon, each episode captures the thrill of the chase and the beauty of the natural world.",
+    "genre": "Reality",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Autosport the Series",
@@ -182,7 +329,23 @@
     "category": "TV Series",
     "rating": "18+",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Autosport the Series is a TV series that takes viewers behind the scenes of the high-octane world of motorsport. From the roar of the engines to the thrill",
+    "genre": "Sports",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Same Answer II",
@@ -197,7 +360,23 @@
     "category": "Movie",
     "rating": "E",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Same Answer II is a movie that follows the journey of a group of friends as they embark on a road trip across the country. Along the way, they must confront their own personal demons and come to terms with the choices they have made in their lives.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Below Echo",
@@ -212,7 +391,23 @@
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Below Echo is a TV series that follows a group of friends as they navigate the challenges of life in a small town. From love and loss to friendship and betrayal, each episode explores a different aspect of their lives and the choices they make along the way.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "The Rockies",
@@ -227,7 +422,23 @@
     "category": "TV Series",
     "rating": "E",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "The Rockies is a TV series that takes viewers on a journey through the majestic Rocky Mountains. From the snow-capped peaks to the lush valleys, each episode explores a different aspect of this iconic mountain range and the people who call it home.",
+    "genre": "Travel",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Relentless",
@@ -242,7 +453,23 @@
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Relentless is a movie that follows the journey of a group of friends as they embark on a dangerous mission to save the world from a deadly threat. Along the way, they must confront their own personal demons and come to terms with the choices they have made in their lives.",
+    "genre": "Action",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Community of Ours",
@@ -257,7 +484,23 @@
     "category": "TV Series",
     "rating": "18+",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Community of Ours is a TV series that follows the lives of a group of friends as they navigate the challenges of life in a small town. From love and loss to friendship and betrayal, each episode explores a different aspect of their lives and the choices they make along the way.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Van Life",
@@ -272,7 +515,23 @@
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Van Life is a movie that follows the journey of a group of friends as they embark on a road trip across the country in a van. Along the way, they must confront their own personal demons and come to terms with the choices they have made in their lives.",
+    "genre": "Comedy",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "The Heiress",
@@ -287,7 +546,23 @@
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "The Heiress is a movie that follows the journey of heiress who must navigate the challenges of inheriting a vast fortune. From the pressures of high society to the dangers of the criminal underworld, she must confront her own personal demons and come to terms with the choices she has made in her life.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Off the Track",
@@ -302,7 +577,23 @@
     "category": "Movie",
     "rating": "18+",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Off the Track is a movie that follows the journey of a group of friends as they embark on a road trip across the country. Along the way, they must confront their own personal demons and come to terms with the choices they have made in their lives.",
+    "genre": "Comedy",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Whispering Hill",
@@ -317,7 +608,23 @@
     "category": "Movie",
     "rating": "E",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Whispering Hill is a movie that follows the journey of a group of friends as they embark on a road trip across the country. Along the way, they must confront their own personal demons and come to terms with the choices they have made in their lives.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "112",
@@ -332,7 +639,23 @@
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "112 is a TV series that follows the lives of a group of friends as they navigate the challenges of life in a small town. From love and loss to friendship and betrayal, each episode explores a different aspect of their lives and the choices they make along the way.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Lone Heart",
@@ -347,7 +670,23 @@
     "category": "Movie",
     "rating": "E",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Lone Heart is a movie that follows the journey of a group of friends as they embark on a road trip across the country. Along the way, they must confront their own personal demons and come to terms with the choices they have made in their lives.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Production Line",
@@ -362,7 +701,23 @@
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Production Line is a TV series that takes viewers behind the scenes of the high-octane world of motorsport. From the roar of the engines to the thrill of the",
+    "genre": "Sports",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Dogs",
@@ -377,7 +732,23 @@
     "category": "TV Series",
     "rating": "E",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Dogs is a TV series that follows the lives of a group of friends as they navigate the challenges of life in a small town. From love and loss to friendship and betrayal, each episode explores a different aspect of their lives and the choices they make along the way.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Asia in 24 Days",
@@ -392,7 +763,23 @@
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Asia in 24 Days is a TV series that takes viewers on a journey through some of the most fascinating and diverse countries in Asia. From the bustling streets of Tokyo to the ancient temples of Angkor Wat, each episode explores a different aspect of the region and its unique culture, history, and people.",
+    "genre": "Travel",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "The Tasty Tour",
@@ -407,7 +794,23 @@
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "The Tasty Tour is a TV series that takes viewers on a culinary journey around the world. From the street food of Bangkok to the fine dining of Paris, each episode explores a different aspect of the global food scene and the people who create it.",
+    "genre": "Food & Drink",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Darker",
@@ -422,7 +825,23 @@
     "category": "Movie",
     "rating": "18+",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Darker is a movie that follows the journey of a group of friends as they embark on a road trip across the country. Along the way, they must confront their own personal demons and come to terms with the choices they have made in their lives.",
+    "genre": "Drama",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Unresolved Cases",
@@ -437,7 +856,23 @@
     "category": "TV Series",
     "rating": "18+",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Unresolved Cases is a TV series that follows a group of detectives as they investigate some of the most baffling and mysterious crimes in history. From unsolved murders to missing persons cases, each episode delves into a different aspect of the criminal underworld and the forces that shape our world.",
+    "genre": "Crime",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   },
   {
     "title": "Mission: Saturn",
@@ -452,6 +887,22 @@
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
-    "isTrending": false
+    "isTrending": false,
+    "description": "Mission: Saturn is a movie that follows the journey of a group of astronauts as they embark on a mission to explore the mysteries of Saturn. From the icy rings to the stormy surface, each scene captures the beauty and wonder of the planet in all its glory.",
+    "genre": "Sci-Fi",
+    "cast": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Doe"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
   }
 ]

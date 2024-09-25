@@ -19,7 +19,7 @@ export default function Slider() {
         Trending
       </h2>
 
-      <div className="h-[20rem]">
+      <div>
         <Swiper slidesPerView={1.4} spaceBetween={16} className="h-[14rem]">
           {data.map(
             (item) =>

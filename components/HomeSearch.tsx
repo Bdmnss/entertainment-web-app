@@ -1,9 +1,9 @@
 import Image from "next/image";
 import searchImage from "../public/assets/icon-search.svg";
 
-export default function Search() {
+export default function HomeSearch() {
   return (
-    <div className="flex items-center gap-4 bg-[#10141e] py-[2.4rem] px-[1.6rem]">
+    <div className="flex items-center gap-4 bg-[#10141e] py-[1rem]">
       <label htmlFor="search">
         <Image src={searchImage} alt="search icon" width={24} />
       </label>
