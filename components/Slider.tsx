@@ -10,11 +10,13 @@ import bookmarkEmptyIcon from "../public/assets/icon-bookmark-empty.svg";
 import movieCategoryIcon from "../public/assets/icon-category-movie.svg";
 import tvCategoryIcon from "../public/assets/icon-category-tv.svg";
 import { useBookmarkStore } from "@/stores/bookmarkStore";
+import { usePageStore } from "@/stores/pageStore";
 
 export default function Slider() {
   const bookmarkStore = useBookmarkStore();
+  const pageStore = usePageStore();
   return (
-    <div>
+    <div className={`${pageStore.currentPage !== "home" ? "hidden" : ""}`}>
       <h2 className="text-white text-[2rem] font-light mb-[1.6rem]">
         Trending
       </h2>
