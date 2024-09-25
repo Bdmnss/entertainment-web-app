@@ -13,7 +13,7 @@ export default function HomeSearch() {
   );
 
   return (
-    <div className="flex items-center gap-4 bg-[#10141e] py-[1rem] responsive">
+    <div className="flex items-center gap-4 bg-[#10141e] py-[1rem] relative">
       <label htmlFor="search">
         <Image src={searchImage} alt="search icon" width={24} />
       </label>
@@ -27,7 +27,7 @@ export default function HomeSearch() {
       />
       {searchInput && hasSearchedItems ? (
         <div
-          className="absolute bg-[#10141e] w-[90%] h-[30%] rounded-lg shadow-lg z-10 top-[11%] overflow-hidden
+          className="absolute bg-[#10141e] w-[100%] h-[30rem] rounded-lg shadow-lg z-10 top-[6rem] overflow-hidden
       overflow-y-scroll border border-[#3d3d3d] scroll-smooth"
         >
           {data
@@ -51,7 +51,7 @@ export default function HomeSearch() {
         </div>
       ) : searchInput ? (
         <div
-          className="absolute bg-[#10141e] w-[90%] h-[30%] rounded-lg shadow-lg z-10 top-[11%] 
+          className="absolute bg-[#10141e] w-[100%] h-[10rem] rounded-lg shadow-lg z-10 top-[6rem] 
         overflow-hidden border border-[#3d3d3d] flex items-center justify-center"
         >
           <p className="text-white text-[1.6rem] font-light">
