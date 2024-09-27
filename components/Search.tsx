@@ -4,8 +4,9 @@ import Image from "next/image";
 import searchImage from "../public/assets/icon-search.svg";
 import { useState } from "react";
 import data from "../data.json";
+import Link from "next/link";
 
-export default function HomeSearch() {
+export default function Search() {
   const [searchInput, setSearchInput] = useState("");
 
   const hasSearchedItems = data.some((item) =>
@@ -35,7 +36,8 @@ export default function HomeSearch() {
               item.title.toLowerCase().includes(searchInput.toLowerCase())
             )
             .map((item) => (
-              <div
+              <Link
+                href={`/${item.title}`}
                 key={item.title}
                 className="p-4 border-b border-[#3d3d3d] flex items-center gap-4"
               >
@@ -46,7 +48,7 @@ export default function HomeSearch() {
                   height={100}
                 />
                 <p className="text-white text-[1.5rem]">{item.title}</p>
-              </div>
+              </Link>
             ))}
         </div>
       ) : searchInput ? (

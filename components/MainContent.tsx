@@ -8,10 +8,13 @@ import bookmarkEmptyIcon from "../public/assets/icon-bookmark-empty.svg";
 import movieCategoryIcon from "../public/assets/icon-category-movie.svg";
 import tvCategoryIcon from "../public/assets/icon-category-tv.svg";
 import { usePageStore } from "@/stores/pageStore";
+import { useRouter } from "next/navigation";
 
 export default function MainContent() {
   const bookmarkStore = useBookmarkStore();
   const pageStore = usePageStore();
+  const router = useRouter();
+
   return (
     <div>
       <h2 className="text-white text-[2rem] font-light mb-[2.4rem]">
@@ -23,7 +26,18 @@ export default function MainContent() {
           (pageStore.currentPage === "movies" && item.category === "Movie") ||
           (pageStore.currentPage === "series" &&
             item.category === "TV Series") ? (
-            <div key={item.title}>
+            <div
+              key={item.title}
+              onClick={(e) => {
+                if (
+                  (e.target as HTMLDivElement).closest("#bookmark")?.id !==
+                  "bookmark"
+                ) {
+                  pageStore.setCurrentPage("");
+                  router.push(`/${item.title}`);
+                }
+              }}
+            >
               <div
                 style={{
                   backgroundImage: `url(${item.thumbnail.regular.small})`,
@@ -31,9 +45,13 @@ export default function MainContent() {
                 className="relative bg-cover bg-center rounded-[0.8rem] w-[16.5rem] h-[11rem] mb-[1rem]"
               >
                 <div
+                  id="bookmark"
                   className="w-[3.2rem] h-[3.2rem] bg-[#10141e] rounded-full flex items-center 
                     justify-center opacity-70 absolute right-3 top-3"
-                  onClick={() => bookmarkStore.toggleBookmark(item.title)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    bookmarkStore.toggleBookmark(item.title);
+                  }}
                 >
                   {item.isBookmarked ? (
                     <Image src={bookmarkFullIcon} alt="bookmark full icon" />

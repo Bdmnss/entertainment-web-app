@@ -11,16 +11,17 @@ import movieCategoryIcon from "../public/assets/icon-category-movie.svg";
 import tvCategoryIcon from "../public/assets/icon-category-tv.svg";
 import { useBookmarkStore } from "@/stores/bookmarkStore";
 import { usePageStore } from "@/stores/pageStore";
+import { useRouter } from "next/navigation";
 
 export default function Slider() {
   const bookmarkStore = useBookmarkStore();
   const pageStore = usePageStore();
+  const router = useRouter();
   return (
     <div className={`${pageStore.currentPage !== "home" ? "hidden" : ""}`}>
       <h2 className="text-white text-[2rem] font-light mb-[1.6rem]">
         Trending
       </h2>
-
       <div>
         <Swiper slidesPerView={1.4} spaceBetween={16} className="h-[14rem]">
           {data.map(
@@ -32,11 +33,24 @@ export default function Slider() {
                       backgroundImage: `url(${item.thumbnail.trending?.small})`,
                     }}
                     className="relative bg-cover bg-center rounded-[0.8rem] h-full"
+                    onClick={(e) => {
+                      if (
+                        (e.target as HTMLDivElement).closest("#bookmark")
+                          ?.id !== "bookmark"
+                      ) {
+                        pageStore.setCurrentPage("");
+                        router.push(`/${item.title}`);
+                      }
+                    }}
                   >
                     <div
+                      id="bookmark"
                       className="w-[3.2rem] h-[3.2rem] bg-[#10141e] rounded-full flex items-center 
                       justify-center opacity-70 absolute right-3 top-3"
-                      onClick={() => bookmarkStore.toggleBookmark(item.title)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        bookmarkStore.toggleBookmark(item.title);
+                      }}
                     >
                       {item.isBookmarked ? (
                         <Image
