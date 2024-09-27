@@ -27,6 +27,7 @@ export default function MainContent() {
           (pageStore.currentPage === "series" &&
             item.category === "TV Series") ? (
             <div
+              className="w-[48%]"
               key={item.id}
               onClick={(e) => {
                 if (
@@ -42,7 +43,7 @@ export default function MainContent() {
                 style={{
                   backgroundImage: `url(${item.thumbnail.regular.small})`,
                 }}
-                className="relative bg-cover bg-center rounded-[0.8rem] w-[16.5rem] h-[11rem] mb-[1rem]"
+                className="relative bg-cover bg-center rounded-[0.8rem] w-full h-[11rem] mb-[1rem]"
               >
                 <div
                   id="bookmark"
