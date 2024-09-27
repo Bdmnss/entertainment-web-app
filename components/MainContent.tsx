@@ -27,14 +27,14 @@ export default function MainContent() {
           (pageStore.currentPage === "series" &&
             item.category === "TV Series") ? (
             <div
-              key={item.title}
+              key={item.id}
               onClick={(e) => {
                 if (
                   (e.target as HTMLDivElement).closest("#bookmark")?.id !==
                   "bookmark"
                 ) {
                   pageStore.setCurrentPage("");
-                  router.push(`/${item.title}`);
+                  router.push(`/${item.id}`);
                 }
               }}
             >

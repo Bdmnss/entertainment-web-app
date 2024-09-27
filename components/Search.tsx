@@ -5,9 +5,11 @@ import searchImage from "../public/assets/icon-search.svg";
 import { useState } from "react";
 import data from "../data.json";
 import Link from "next/link";
+import { usePageStore } from "@/stores/pageStore";
 
 export default function Search() {
   const [searchInput, setSearchInput] = useState("");
+  const pageStore = usePageStore();
 
   const hasSearchedItems = data.some((item) =>
     item.title.toLowerCase().includes(searchInput.toLowerCase())
@@ -37,9 +39,10 @@ export default function Search() {
             )
             .map((item) => (
               <Link
-                href={`/${item.title}`}
-                key={item.title}
+                href={`/${item.id}`}
+                key={item.id}
                 className="p-4 border-b border-[#3d3d3d] flex items-center gap-4"
+                onClick={() => pageStore.setCurrentPage("")}
               >
                 <Image
                   src={item.thumbnail.regular.small}

@@ -27,7 +27,7 @@ export default function Slider() {
           {data.map(
             (item) =>
               item.isTrending && (
-                <SwiperSlide key={item.title}>
+                <SwiperSlide key={item.id}>
                   <div
                     style={{
                       backgroundImage: `url(${item.thumbnail.trending?.small})`,
@@ -39,7 +39,7 @@ export default function Slider() {
                           ?.id !== "bookmark"
                       ) {
                         pageStore.setCurrentPage("");
-                        router.push(`/${item.title}`);
+                        router.push(`/${item.id}`);
                       }
                     }}
                   >

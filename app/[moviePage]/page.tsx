@@ -1,4 +1,4 @@
-import data from "../../data.json";
+import MoviePage from "@/pages/MoviePage";
 
 interface Params {
   params: {
@@ -6,9 +6,8 @@ interface Params {
   };
 }
 
-export default function page({ params }: Params) {
+export default function Page({ params }: Params) {
   const { moviePage } = params;
-  const movie = data.find((movie) => movie.title === moviePage);
-  console.log(movie);
-  return <div>page</div>;
+
+  return <MoviePage moviePage={moviePage} />;
 }

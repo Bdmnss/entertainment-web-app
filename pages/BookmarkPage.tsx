@@ -24,14 +24,14 @@ export default function BookmarkPage() {
           bookmarkStore.data.map((item) =>
             item.isBookmarked ? (
               <div
-                key={item.title}
+                key={item.id}
                 onClick={(e) => {
                   if (
                     (e.target as HTMLDivElement).closest("#bookmark")?.id !==
                     "bookmark"
                   ) {
                     pageStore.setCurrentPage("");
-                    router.push(`/${item.title}`);
+                    router.push(`/${item.id}`);
                   }
                 }}
               >
