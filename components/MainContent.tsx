@@ -10,11 +10,13 @@ import tvCategoryIcon from "../public/assets/icon-category-tv.svg";
 import { usePageStore } from "@/stores/pageStore";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { useWindowWidth } from "@/hooks/useWindowWidth";
 
 export default function MainContent() {
   const bookmarkStore = useBookmarkStore();
   const pageStore = usePageStore();
   const router = useRouter();
+  const windowWidth = useWindowWidth();
 
   useEffect(() => {
     const currentPath = window.location.pathname;
@@ -28,17 +30,17 @@ export default function MainContent() {
 
   return (
     <div>
-      <h2 className="text-white text-[2rem] font-light mb-[2.4rem]">
+      <h2 className="text-white text-[2rem] font-light mb-[2.4rem] md:text-[3.2rem]">
         Recommended for you
       </h2>
-      <div className="flex flex-wrap gap-[1.3rem] justify-center">
+      <div className="flex flex-wrap gap-[1.5rem] justify-center md:gap-[2.9rem]">
         {data.map((item) =>
           (pageStore.currentPage === "home" && !item.isTrending) ||
           (pageStore.currentPage === "movies" && item.category === "Movie") ||
           (pageStore.currentPage === "series" &&
             item.category === "TV Series") ? (
             <div
-              className="w-[48%]"
+              className="w-[47%] cursor-pointer md:w-[30%]"
               key={item.id}
               onClick={(e) => {
                 if (
@@ -51,7 +53,11 @@ export default function MainContent() {
             >
               <div
                 style={{
-                  backgroundImage: `url(${item.thumbnail.regular.small})`,
+                  backgroundImage: `url(${
+                    windowWidth >= 768
+                      ? item.thumbnail.regular.medium
+                      : item.thumbnail.regular.small
+                  })`,
                 }}
                 className="relative bg-cover bg-center rounded-[0.8rem] w-full h-[11rem] mb-[1rem]"
               >
@@ -72,21 +78,21 @@ export default function MainContent() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <p className="text-white text-[1.1rem] font-light">
+                <p className="text-white text-[1.1rem] font-light md:text-[1.3rem]">
                   {item.year}
                 </p>
-                <div className="w-[3px] h-[3px] bg-white rounded-full"></div>
+                <div className="w-[3px] h-[3px] bg-white rounded-full md:w-[5px] md:h-[5px]"></div>
                 {item.category === "Movie" ? (
                   <Image src={movieCategoryIcon} alt="movie icon" />
                 ) : (
                   <Image src={tvCategoryIcon} alt="tv icon" />
                 )}
-                <div className="w-[3px] h-[3px] bg-white rounded-full"></div>
-                <p className="text-white text-[1.1rem] font-light">
+                <div className="w-[3px] h-[3px] bg-white rounded-full md:w-[5px] md:h-[5px]"></div>
+                <p className="text-white text-[1.1rem] font-light md:text-[1.3rem]">
                   {item.rating}
                 </p>
               </div>
-              <h2 className="text-white text-[1.4rem] font-medium">
+              <h2 className="text-white text-[1.4rem] font-medium md:text-[1.8rem]">
                 {item.title}
               </h2>
             </div>

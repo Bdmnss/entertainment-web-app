@@ -9,7 +9,10 @@ import Link from "next/link";
 export default function Header() {
   const pageStore = usePageStore();
   return (
-    <header className="bg-[#161d2f] flex justify-between items-center p-5">
+    <header
+      className="bg-[#161d2f] flex justify-between items-center p-5 md:absolute md:w-[94%] 
+    md:top-[1%] md:left-[3%] md:rounded-xl md:p-8"
+    >
       <Image src={logo} alt="Logo" width={24} />
       <div className="flex justify-between items-center gap-8">
         <Link href="/">

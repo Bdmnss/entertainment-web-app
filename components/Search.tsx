@@ -16,7 +16,7 @@ export default function Search() {
   );
 
   return (
-    <div className="flex items-center gap-4 bg-[#10141e] py-[1rem] relative">
+    <div className="flex items-center gap-4 bg-[#10141e] py-[1rem] relative md:mt-[7.5rem]">
       <label htmlFor="search">
         <Image src={searchImage} alt="search icon" width={24} />
       </label>
@@ -24,7 +24,8 @@ export default function Search() {
         id="search"
         type="text"
         placeholder="Search for movies or TV series"
-        className="bg-[#10141e] text-white w-[80%] border-none focus:outline-none text-[1.6rem] font-light"
+        className="bg-[#10141e] text-white w-[80%] border-none focus:outline-none text-[1.6rem] 
+        font-light md:text-[2.4rem]"
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
       />

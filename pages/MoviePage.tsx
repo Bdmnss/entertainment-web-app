@@ -13,11 +13,14 @@ export default function MoviePage({ moviePage }: { moviePage: string }) {
 
   const bookmarkStore = useBookmarkStore();
   return (
-    <div className="bg-[#10141e] min-h-screen min-w-screen px-[1.3rem] pt-7 pb-10 flex flex-col gap-[2rem]">
-      <div className="flex flex-col gap-6">
+    <div
+      className="bg-[#10141e] min-h-screen min-w-screen px-[1.3rem] pt-7 pb-10 flex flex-col gap-[2rem]
+    md:px-[2.5rem]"
+    >
+      <div className="flex flex-col gap-6 md:mt-[10rem]">
         <div
           style={{
-            backgroundImage: `url(${movie?.thumbnail.regular.small})`,
+            backgroundImage: `url(${movie?.thumbnail.regular.large})`,
           }}
           className="relative bg-cover bg-center rounded-[0.8rem] h-[25rem]"
         >

@@ -12,27 +12,43 @@ import tvCategoryIcon from "../public/assets/icon-category-tv.svg";
 import { useBookmarkStore } from "@/stores/bookmarkStore";
 import { usePageStore } from "@/stores/pageStore";
 import { useRouter } from "next/navigation";
+import { useWindowWidth } from "@/hooks/useWindowWidth";
 
 export default function Slider() {
   const bookmarkStore = useBookmarkStore();
   const pageStore = usePageStore();
   const router = useRouter();
+  const windowWidth = useWindowWidth();
   return (
     <div className={`${pageStore.currentPage !== "home" ? "hidden" : ""}`}>
-      <h2 className="text-white text-[2rem] font-light mb-[1.6rem]">
+      <h2 className="text-white text-[2rem] font-light mb-[1.6rem] md:text-[3.2rem]">
         Trending
       </h2>
       <div>
-        <Swiper slidesPerView={1.4} spaceBetween={16} className="h-[14rem]">
+        <Swiper
+          slidesPerView={1.4}
+          spaceBetween={16}
+          breakpoints={{
+            768: {
+              spaceBetween: 40,
+              slidesPerView: 1.5,
+            },
+          }}
+          className="h-[14rem] md:h-[23rem]"
+        >
           {data.map(
             (item) =>
               item.isTrending && (
                 <SwiperSlide key={item.id}>
                   <div
                     style={{
-                      backgroundImage: `url(${item.thumbnail.trending?.small})`,
+                      backgroundImage: `url(${
+                        windowWidth >= 768
+                          ? item.thumbnail.trending?.large
+                          : item.thumbnail.trending?.small
+                      })`,
                     }}
-                    className="relative bg-cover bg-center rounded-[0.8rem] h-full"
+                    className="relative bg-cover bg-center rounded-[0.8rem] h-full cursor-pointer"
                     onClick={(e) => {
                       if (
                         (e.target as HTMLDivElement).closest("#bookmark")
