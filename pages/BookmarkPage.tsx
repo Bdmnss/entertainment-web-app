@@ -6,17 +6,16 @@ import bookmarkFullIcon from "../public/assets/icon-bookmark-full.svg";
 import bookmarkEmptyIcon from "../public/assets/icon-bookmark-empty.svg";
 import movieCategoryIcon from "../public/assets/icon-category-movie.svg";
 import tvCategoryIcon from "../public/assets/icon-category-tv.svg";
-import { usePageStore } from "@/stores/pageStore";
 import { useRouter } from "next/navigation";
 
 export default function BookmarkPage() {
   const bookmarkStore = useBookmarkStore();
-  const pageStore = usePageStore();
   const router = useRouter();
 
   const hasBookmarkedItems = bookmarkStore.data.some(
     (item) => item.isBookmarked
   );
+
   return (
     <div className="bg-[#10141e] min-h-screen min-w-screen px-[1.3rem] pt-7 pb-10">
       <div className=" flex flex-wrap gap-[1.3rem] justify-center">
@@ -30,7 +29,6 @@ export default function BookmarkPage() {
                     (e.target as HTMLDivElement).closest("#bookmark")?.id !==
                     "bookmark"
                   ) {
-                    pageStore.setCurrentPage("");
                     router.push(`/${item.id}`);
                   }
                 }}

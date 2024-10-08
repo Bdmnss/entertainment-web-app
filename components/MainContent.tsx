@@ -9,11 +9,22 @@ import movieCategoryIcon from "../public/assets/icon-category-movie.svg";
 import tvCategoryIcon from "../public/assets/icon-category-tv.svg";
 import { usePageStore } from "@/stores/pageStore";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function MainContent() {
   const bookmarkStore = useBookmarkStore();
   const pageStore = usePageStore();
   const router = useRouter();
+
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    if (
+      pageStore.currentPage === "bookmark" &&
+      currentPath !== "/bookmarkPage"
+    ) {
+      pageStore.setCurrentPage("home");
+    }
+  }, [pageStore]);
 
   return (
     <div>
@@ -34,7 +45,6 @@ export default function MainContent() {
                   (e.target as HTMLDivElement).closest("#bookmark")?.id !==
                   "bookmark"
                 ) {
-                  pageStore.setCurrentPage("");
                   router.push(`/${item.id}`);
                 }
               }}

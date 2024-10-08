@@ -38,7 +38,6 @@ export default function Slider() {
                         (e.target as HTMLDivElement).closest("#bookmark")
                           ?.id !== "bookmark"
                       ) {
-                        pageStore.setCurrentPage("");
                         router.push(`/${item.id}`);
                       }
                     }}
