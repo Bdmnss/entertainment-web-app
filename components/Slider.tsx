@@ -33,6 +33,10 @@ export default function Slider() {
               spaceBetween: 40,
               slidesPerView: 1.5,
             },
+            1280: {
+              spaceBetween: 40,
+              slidesPerView: 2.5,
+            },
           }}
           className="h-[14rem] md:h-[23rem]"
         >
@@ -83,22 +87,23 @@ export default function Slider() {
                     <div className="flex justify-between items-center absolute bottom-3 px-[1rem] w-full">
                       <div className="flex flex-col">
                         <div className="flex items-center gap-[1rem]">
-                          <p className="text-white text-[1.2rem] font-light">
+                          <p className="text-white text-[1.1rem] font-light md:text-[1.3rem] xl:text-[1.5rem]">
                             {item.year}
                           </p>
-                          <div className="w-[3px] h-[3px] bg-white rounded-full"></div>
+                          <div className="w-[3px] h-[3px] bg-white rounded-full md:w-[5px] md:h-[5px]"></div>
                           <div className="flex items-center gap-[1rem]">
                             {item.category === "Movie" ? (
                               <Image src={movieCategoryIcon} alt="movie icon" />
                             ) : (
                               <Image src={tvCategoryIcon} alt="tv icon" />
                             )}
-                            <p className="text-white text-[1.2rem] font-light">
+                            <div className="w-[3px] h-[3px] bg-white rounded-full md:w-[5px] md:h-[5px]"></div>
+                            <p className="text-white text-[1.1rem] font-light md:text-[1.3rem] xl:text-[1.5rem]">
                               {item.category}
                             </p>
                           </div>
                         </div>
-                        <h3 className="text-white text-[1.5rem] font-medium">
+                        <h3 className="text-white text-[1.4rem] font-medium md:text-[1.8rem] xl:text-[2.4rem]">
                           {item.title}
                         </h3>
                       </div>

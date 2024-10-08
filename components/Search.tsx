@@ -16,7 +16,7 @@ export default function Search() {
   );
 
   return (
-    <div className="flex items-center gap-4 bg-[#10141e] py-[1rem] relative md:mt-[7.5rem]">
+    <div className="flex items-center gap-4 bg-[#10141e] py-[1rem] relative md:mt-[7.5rem] xl:mt-0">
       <label htmlFor="search">
         <Image src={searchImage} alt="search icon" width={24} />
       </label>

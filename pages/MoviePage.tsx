@@ -15,14 +15,14 @@ export default function MoviePage({ moviePage }: { moviePage: string }) {
   return (
     <div
       className="bg-[#10141e] min-h-screen min-w-screen px-[1.3rem] pt-7 pb-10 flex flex-col gap-[2rem]
-    md:px-[2.5rem]"
+    md:px-[2.5rem] xl:pl-[12rem]"
     >
-      <div className="flex flex-col gap-6 md:mt-[10rem]">
+      <div className="flex flex-col gap-6 md:mt-[10rem] xl:mt-0">
         <div
           style={{
             backgroundImage: `url(${movie?.thumbnail.regular.large})`,
           }}
-          className="relative bg-cover bg-center rounded-[0.8rem] h-[25rem]"
+          className="relative bg-cover bg-center rounded-[0.8rem] h-[25rem] xl:h-[40rem]"
         >
           <div
             className="w-[3.5rem] h-[3.5rem] bg-[#10141e] rounded-full flex items-center justify-center 

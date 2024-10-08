@@ -10,11 +10,12 @@ export default function Header() {
   const pageStore = usePageStore();
   return (
     <header
-      className="bg-[#161d2f] flex justify-between items-center p-5 md:absolute md:w-[94%] 
-    md:top-[1%] md:left-[3%] md:rounded-xl md:p-8"
+      className="bg-[#161d2f] flex justify-between items-center p-5 md:absolute md:w-[96%] 
+    md:top-[1%] md:left-[2%] md:rounded-xl md:p-8 xl:fixed xl:h-[90%] xl:w-[7rem] xl:top-[2%] xl:left-[2%] 
+    xl:flex-col"
     >
       <Image src={logo} alt="Logo" width={24} />
-      <div className="flex justify-between items-center gap-8">
+      <div className="flex justify-between items-center gap-8 xl:flex-col xl:gap-[4rem]">
         <Link href="/">
           <svg
             width="20"
